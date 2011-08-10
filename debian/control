@@ -9,7 +9,7 @@ Homepage: http://www.openpanel.com/openapp/
 Package: openapp-drupal
 Architecture: any
 Pre-Depends: openapp-backup, mysql-server, openapp-tuning
-Depends: openpanel-openapp-mod-user, openpanel-openapp-mod-drupal, openpanel-openapp-mod-smtp, openpanel-openapp-mod-backup, php5-cli, openapp-drupal-installer, drush
+Depends: openpanel-openapp-mod-user, openpanel-openapp-mod-drupal, openpanel-openapp-mod-smtp, openpanel-openapp-mod-backup, php5-cli, openapp-drupal-installer, openapp-drush-installer
 Provides: openapp-app
 Conflicts: openapp-app
 Description: This will install your Drupal OpenApp Appliance!
@@ -21,3 +21,10 @@ Depends: php5-mysql, mysql-server
 Provides: openapp-app-installer
 Conflicts: openapp-app-installer
 Description: This will install Drupal for your OpenApp Appliance!
+
+Package: openapp-drush-installer
+Architecture: any
+Pre-Depends: wget
+Depends: php5-mysql, php5-cli
+Conflicts: drush
+Description: This will install Drush for your OpenApp Appliance!
