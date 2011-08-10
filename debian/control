@@ -17,7 +17,7 @@ Description: This will install your Drupal OpenApp Appliance!
 Package: openapp-drupal-installer
 Architecture: any
 Pre-Depends: wget, apache2, libapache2-mod-php5, php5-mysql
-Depends: php5-mysql, mysql-server
+Depends: php5-mysql, mysql-server, php5-gd
 Provides: openapp-app-installer
 Conflicts: openapp-app-installer
 Description: This will install Drupal for your OpenApp Appliance!
