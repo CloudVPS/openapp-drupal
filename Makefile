@@ -7,7 +7,7 @@ install:
 	tar zxf drush-7.x-4.4.tar.gz
 	mkdir -p $(DRUSH_PREFIX)/usr/bin
 	cd $(DRUSH_PREFIX)/usr/bin
-	ln -s /usr/share/drush/drush
+	ln -sf /usr/share/drush/drush
 
 uninstall:
 # bin
