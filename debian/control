@@ -1,0 +1,29 @@
+Source: openapp-drupal
+Section: database
+Priority: extra
+Maintainer: Mark Schouten <mark@tuxis.nl>
+Build-Depends: debhelper
+Standards-Version: 3.9.1
+Homepage: http://www.openpanel.com/openapp/
+
+Package: openapp-drupal
+Architecture: any
+Pre-Depends: openapp-backup, openapp-tuning
+Depends: openpanel-openapp-mod-drupal, openpanel-openapp-mod-smtp, openpanel-openapp-mod-backup, php5-cli, openapp-drupal-installer, openapp-drush-installer
+Provides: openapp-app
+Conflicts: openapp-app
+Description: This will install your Drupal OpenApp Appliance!
+
+Package: openapp-drupal-installer
+Architecture: any
+Pre-Depends: wget
+Depends: php5-mysql, apache2, libapache2-mod-php5
+Provides: openapp-app-installer
+Conflicts: openapp-app-installer
+Description: This will install Drupal for your OpenApp Appliance!
+
+Package: openapp-drush-installer
+Architecture: any
+Pre-Depends: wget
+Depends: php5-mysql, php5-cli
+Description: This will install Drush for your OpenApp Appliance!
