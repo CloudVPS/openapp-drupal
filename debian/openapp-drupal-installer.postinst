@@ -53,8 +53,6 @@ case "$1" in
 			a2dissite default
 			a2enmod rewrite headers expires ssl
 
-            ln -sf /etc/openapp-drupal/apache2.conf /etc/apache2/sites-enabled/drupal.conf
-
             invoke-rc.d apache2 restart
 		fi
 	;;
