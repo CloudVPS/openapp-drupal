@@ -8,7 +8,6 @@ install:
 	tar zxf drush-7.x-4.4.tar.gz -C $(DRUSH_PREFIX)/usr/share
 	mkdir -p $(DRUSH_PREFIX)/usr/bin
 	ln -sf /usr/share/drush/drush $(DRUSH_PREFIX)/usr/bin/drush
-	cp apache2.conf $(DRUPAL_PREFIX)/etc/openapp-drupal/
 
 uninstall:
 # bin
