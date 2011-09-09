@@ -35,7 +35,7 @@ install_drupal() {
 	rm -rf /var/www
 	mkdir /var/www
 
-	wget -q -O /tmp/drupal-$$.tar.gz ${MIRROR}/drupal-7.7.tar.gz
+	wget -q -O /tmp/drupal-$$.tar.gz ${MIRROR}/drupal-7.8.tar.gz
 	if [ $? -eq 0 ]; then
 		mkdir -p ${INSTALLDIR} || fatal "Unable to create directory ${INSTALLDIR}"
 		cd ${INSTALLDIR} || fatal "Unable to go into directory ${INSTALLDIR}"
