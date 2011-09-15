@@ -18,5 +18,3 @@ uninstall:
 clean:
 	-echo "NOP"
 
- 
-
